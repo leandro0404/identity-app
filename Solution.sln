@@ -38,6 +38,28 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dotnet", "dotnet", "{1D9A02
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcClient", "src\clients\dotnet\MvcClient.csproj", "{23878526-D9EF-44E8-AFB9-A1BB55B1CAD6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "react", "react", "{31F78E76-D899-4FF0-9C5A-BF097CC16DEC}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "src(1)", "src\clients\react-app\src\", "{9B0C7E1B-3BD5-4DF0-8571-89D5552C674A}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_59010"
+		Debug.AspNetCompiler.PhysicalPath = "src\clients\react-app\src\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59010\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_59010"
+		Release.AspNetCompiler.PhysicalPath = "src\clients\react-app\src\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59010\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "59010"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +78,10 @@ Global
 		{23878526-D9EF-44E8-AFB9-A1BB55B1CAD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23878526-D9EF-44E8-AFB9-A1BB55B1CAD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23878526-D9EF-44E8-AFB9-A1BB55B1CAD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B0C7E1B-3BD5-4DF0-8571-89D5552C674A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B0C7E1B-3BD5-4DF0-8571-89D5552C674A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B0C7E1B-3BD5-4DF0-8571-89D5552C674A}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B0C7E1B-3BD5-4DF0-8571-89D5552C674A}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,6 +92,8 @@ Global
 		{24E686CA-F2F7-4E06-B08E-C977AEBD279A} = {50247591-D970-422C-8147-714F481564DD}
 		{1D9A02AA-EFDF-4039-8D36-1CC9BF4E3486} = {267160BE-927E-458F-907E-BB69ABE09DE5}
 		{23878526-D9EF-44E8-AFB9-A1BB55B1CAD6} = {1D9A02AA-EFDF-4039-8D36-1CC9BF4E3486}
+		{31F78E76-D899-4FF0-9C5A-BF097CC16DEC} = {267160BE-927E-458F-907E-BB69ABE09DE5}
+		{9B0C7E1B-3BD5-4DF0-8571-89D5552C674A} = {31F78E76-D899-4FF0-9C5A-BF097CC16DEC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F3F21DF1-B497-4B27-98C9-132ED5A3AA0A}

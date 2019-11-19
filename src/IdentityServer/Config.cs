@@ -56,7 +56,7 @@ namespace IdentityServerWithMvc
                     AllowAccessTokensViaBrowser = true,
                     RequireConsent = false,
                     RedirectUris = { "http://localhost:4200/login-callback" },
-                    PostLogoutRedirectUris =  { "http://localhost:4200/" },
+                    PostLogoutRedirectUris =  { "http://localhost:4200/login-callback" },
                     AllowedCorsOrigins = { "http://localhost:4200" },
                     AllowedScopes =
                     {
@@ -64,6 +64,27 @@ namespace IdentityServerWithMvc
                         IdentityServerConstants.StandardScopes.Profile,
                         IdentityServerConstants.StandardScopes.Email,
                     }
+                },
+               new Client  {
+                    ClientId ="reactoidc",
+                    ClientName = "react OpenId Connect",
+                    AllowedGrantTypes = GrantTypes.Implicit,
+                    AllowAccessTokensViaBrowser = true,
+                    RequireConsent = false,
+                    // where to redirect to after login
+                    RedirectUris = { "http://localhost:3000/callback.html" },
+
+                    // where to redirect to after logout
+                    PostLogoutRedirectUris = { "http://localhost:3000/index.html" },
+
+                    AllowedCorsOrigins = { "http://localhost:3000" },
+                    AllowedScopes =
+                    {
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Profile,
+                        IdentityServerConstants.StandardScopes.Email,
+                    }
+
                 }
             };
         }
